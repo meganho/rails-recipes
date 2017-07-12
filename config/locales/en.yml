@@ -20,7 +20,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 "en":
-
+  event:
+    status:
+      draft: 草稿
+      public: 公开
+      private: 私密
     event_list: Event List
 
     admin:

@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :events
+  resource :user
+
+get "/faq" => "pages#faq"
 
   namespace :admin do
     root "events#index"
@@ -10,5 +13,3 @@ Rails.application.routes.draw do
 
   root "events#index"
 end
-
-get "/faq" => "pages#faq"
