@@ -8,9 +8,9 @@
   <th>Actions</th>
 </tr>
 
-      <% @users.each do |user| %>  
+      <% @users.each do |user| %>
   <tr>
-    has_many :groups, :through => :memberships, :source => <name>
+  
     <td><%= user.id %></td>
     <td><%= user.email %></td>
     <td>
