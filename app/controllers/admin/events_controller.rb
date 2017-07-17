@@ -11,9 +11,6 @@ class Admin::EventsController < AdminController
   def new
     @event = Event.new
     @event.tickets.build
-
-
-
   end
 
   def create
@@ -49,8 +46,22 @@ class Admin::EventsController < AdminController
 
   protected
 
+  def bulk_update
+      total = 0
+      Array(params[:ids]).each do |event_id|
+        event = Event.find(event_id)
+        event.destroy
+        total  = 1
+      end
+
+      flash[:alert] = "成功完成 #{total} 笔"
+      redirect_to admin_events_path
+    end
+
   def event_params
     params.require(:event).permit(:name, :description, :friendly_id, :status, :category_id, :tickets_attributes => [:id, :name, :description, :price, :_destroy])
   end
+
+
 
 end

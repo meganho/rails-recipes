@@ -1,7 +1,7 @@
 <h1><%= @event.name %></h1>
 
 
-<%= simple_format @event.description %>
+<%= sanitize @event.description %>
 
   <h2><%= display_event_status(@event) %></h2>
 
