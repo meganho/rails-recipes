@@ -20,14 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 "en":
+  bulk_update: 批次编辑
+  bulk_delete: 批次删除
   event:
-    status:
-      draft: 草稿
-      public: 公开
-      private: 私密
-    event_list: Event List
+  status:
+  draft: 草稿
+  public: 公开
+  private: 私密
+  event_list: Event List
 
-    admin:
-      event_list: Admin Event List
-
-      hello: "Hi %{name},"
+admin:
+  event_list: Admin Event List
+  hello: "Hi %{name},"
