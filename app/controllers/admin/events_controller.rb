@@ -75,8 +75,6 @@ class Admin::EventsController < AdminController
      end
     end
 
-
-
   protected
 
   def event_params
