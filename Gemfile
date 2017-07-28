@@ -66,6 +66,9 @@ gem 'rubyzip'
 gem 'axlsx'
 gem 'axlsx_rails'
 
+gem 'letter_opener'
+
+gem 'premailer-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
