@@ -11,7 +11,7 @@ set :repo_url, "git@github.com:meganho/rails-recipes.git"    # 请用你自己�
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
-set :deploy_to, "/home/deploy/rails-recipes"     # 这样服务器上代码的目录位置，放在 deploy 帐号下。请用你自己的项目名称。
+set :deploy_to, "/home/deploy/enigmatic-mesa-33314.herokuapp.com"     # 这样服务器上代码的目录位置，放在 deploy 帐号下。请用你自己的项目名称。
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
